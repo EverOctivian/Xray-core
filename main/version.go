@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"zgjzd.cn/guoqingjun/xray-core/core"
-	"zgjzd.cn/guoqingjun/xray-core/main/commands/base"
+	"github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/main/commands/base"
 )
 
 var cmdVersion = &base.Command{

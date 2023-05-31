@@ -9,9 +9,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"zgjzd.cn/guoqingjun/xray-core/common/buf"
-	"zgjzd.cn/guoqingjun/xray-core/common/signal"
-	"zgjzd.cn/guoqingjun/xray-core/common/signal/semaphore"
+	"github.com/xtls/xray-core/common/buf"
+	"github.com/xtls/xray-core/common/signal"
+	"github.com/xtls/xray-core/common/signal/semaphore"
 )
 
 var (

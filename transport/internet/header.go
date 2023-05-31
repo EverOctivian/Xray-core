@@ -4,7 +4,7 @@ import (
 	"context"
 	"net"
 
-	"zgjzd.cn/guoqingjun/xray-core/common"
+	"github.com/xtls/xray-core/common"
 )
 
 type PacketHeader interface {

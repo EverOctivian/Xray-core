@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"time"
 
-	"zgjzd.cn/guoqingjun/xray-core/common/platform"
-	"zgjzd.cn/guoqingjun/xray-core/features"
+	"github.com/xtls/xray-core/common/platform"
+	"github.com/xtls/xray-core/features"
 )
 
 // Timeout contains limits for connection timeout.

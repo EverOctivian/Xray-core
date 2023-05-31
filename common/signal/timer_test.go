@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	. "zgjzd.cn/guoqingjun/xray-core/common/signal"
+	. "github.com/xtls/xray-core/common/signal"
 )
 
 func TestActivityTimer(t *testing.T) {

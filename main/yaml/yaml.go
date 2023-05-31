@@ -3,12 +3,12 @@ package yaml
 import (
 	"io"
 
-	"zgjzd.cn/guoqingjun/xray-core/common"
-	"zgjzd.cn/guoqingjun/xray-core/common/cmdarg"
-	"zgjzd.cn/guoqingjun/xray-core/core"
-	"zgjzd.cn/guoqingjun/xray-core/infra/conf"
-	"zgjzd.cn/guoqingjun/xray-core/infra/conf/serial"
-	"zgjzd.cn/guoqingjun/xray-core/main/confloader"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/cmdarg"
+	"github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/infra/conf"
+	"github.com/xtls/xray-core/infra/conf/serial"
+	"github.com/xtls/xray-core/main/confloader"
 )
 
 func init() {

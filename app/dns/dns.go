@@ -1,7 +1,7 @@
 // Package dns is an implementation of core.DNS feature.
 package dns
 
-//go:generate go run zgjzd.cn/guoqingjun/xray-core/common/errors/errorgen
+//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
 
 import (
 	"context"
@@ -9,14 +9,14 @@ import (
 	"strings"
 	"sync"
 
-	"zgjzd.cn/guoqingjun/xray-core/app/router"
-	"zgjzd.cn/guoqingjun/xray-core/common"
-	"zgjzd.cn/guoqingjun/xray-core/common/errors"
-	"zgjzd.cn/guoqingjun/xray-core/common/net"
-	"zgjzd.cn/guoqingjun/xray-core/common/session"
-	"zgjzd.cn/guoqingjun/xray-core/common/strmatcher"
-	"zgjzd.cn/guoqingjun/xray-core/features"
-	"zgjzd.cn/guoqingjun/xray-core/features/dns"
+	"github.com/xtls/xray-core/app/router"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/session"
+	"github.com/xtls/xray-core/common/strmatcher"
+	"github.com/xtls/xray-core/features"
+	"github.com/xtls/xray-core/features/dns"
 )
 
 // DNS is a DNS rely server.
@@ -54,7 +54,7 @@ func New(ctx context.Context, config *Config) (*DNS, error) {
 	case 0, net.IPv4len, net.IPv6len:
 		clientIP = net.IP(config.ClientIp)
 	default:
-		return nil, newError("unexpected client IP length ", len(config.ClientIp))
+		return nil, newError("unexpected client IP length.", len(config.ClientIp))
 	}
 
 	var ipOption *dns.IPOption
@@ -81,7 +81,7 @@ func New(ctx context.Context, config *Config) (*DNS, error) {
 
 	hosts, err := NewStaticHosts(config.StaticHosts, config.Hosts)
 	if err != nil {
-		return nil, newError("failed to create hosts").Base(err)
+		return nil, newError("failed to create hosts.").Base(err)
 	}
 
 	clients := []*Client{}
@@ -99,7 +99,7 @@ func New(ctx context.Context, config *Config) (*DNS, error) {
 		features.PrintDeprecatedFeatureWarning("simple DNS server")
 		client, err := NewSimpleClient(ctx, endpoint, clientIP)
 		if err != nil {
-			return nil, newError("failed to create client").Base(err)
+			return nil, newError("failed to create client.").Base(err)
 		}
 		clients = append(clients, client)
 	}
@@ -122,7 +122,7 @@ func New(ctx context.Context, config *Config) (*DNS, error) {
 		}
 		client, err := NewClient(ctx, ns, myClientIP, geoipContainer, &matcherInfos, updateDomain)
 		if err != nil {
-			return nil, newError("failed to create client").Base(err)
+			return nil, newError("failed to create client.").Base(err)
 		}
 		clients = append(clients, client)
 	}
@@ -170,7 +170,7 @@ func (s *DNS) IsOwnLink(ctx context.Context) bool {
 // LookupIP implements dns.Client.
 func (s *DNS) LookupIP(domain string, option dns.IPOption) ([]net.IP, error) {
 	if domain == "" {
-		return nil, newError("empty domain name")
+		return nil, newError("empty domain name.")
 	}
 
 	option.IPv4Enable = option.IPv4Enable && s.ipOption.IPv4Enable

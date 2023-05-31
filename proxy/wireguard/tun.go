@@ -13,6 +13,7 @@ import (
 	"os"
 
 	"github.com/sagernet/wireguard-go/tun"
+	"github.com/xtls/xray-core/features/dns"
 	"gvisor.dev/gvisor/pkg/bufferv2"
 	"gvisor.dev/gvisor/pkg/tcpip"
 	"gvisor.dev/gvisor/pkg/tcpip/adapters/gonet"
@@ -23,7 +24,6 @@ import (
 	"gvisor.dev/gvisor/pkg/tcpip/stack"
 	"gvisor.dev/gvisor/pkg/tcpip/transport/tcp"
 	"gvisor.dev/gvisor/pkg/tcpip/transport/udp"
-	"zgjzd.cn/guoqingjun/xray-core/features/dns"
 )
 
 type netTun struct {

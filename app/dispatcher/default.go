@@ -1,6 +1,6 @@
 package dispatcher
 
-//go:generate go run zgjzd.cn/guoqingjun/xray-core/common/errors/errorgen
+//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
 
 import (
 	"context"
@@ -9,21 +9,21 @@ import (
 	"sync"
 	"time"
 
-	"zgjzd.cn/guoqingjun/xray-core/common"
-	"zgjzd.cn/guoqingjun/xray-core/common/buf"
-	"zgjzd.cn/guoqingjun/xray-core/common/log"
-	"zgjzd.cn/guoqingjun/xray-core/common/net"
-	"zgjzd.cn/guoqingjun/xray-core/common/protocol"
-	"zgjzd.cn/guoqingjun/xray-core/common/session"
-	"zgjzd.cn/guoqingjun/xray-core/core"
-	"zgjzd.cn/guoqingjun/xray-core/features/dns"
-	"zgjzd.cn/guoqingjun/xray-core/features/outbound"
-	"zgjzd.cn/guoqingjun/xray-core/features/policy"
-	"zgjzd.cn/guoqingjun/xray-core/features/routing"
-	routing_session "zgjzd.cn/guoqingjun/xray-core/features/routing/session"
-	"zgjzd.cn/guoqingjun/xray-core/features/stats"
-	"zgjzd.cn/guoqingjun/xray-core/transport"
-	"zgjzd.cn/guoqingjun/xray-core/transport/pipe"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/buf"
+	"github.com/xtls/xray-core/common/log"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/protocol"
+	"github.com/xtls/xray-core/common/session"
+	"github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/features/dns"
+	"github.com/xtls/xray-core/features/outbound"
+	"github.com/xtls/xray-core/features/policy"
+	"github.com/xtls/xray-core/features/routing"
+	routing_session "github.com/xtls/xray-core/features/routing/session"
+	"github.com/xtls/xray-core/features/stats"
+	"github.com/xtls/xray-core/transport"
+	"github.com/xtls/xray-core/transport/pipe"
 )
 
 var errSniffingTimeout = newError("timeout on sniffing")

@@ -3,7 +3,7 @@ package kcp
 import (
 	"sync"
 
-	"zgjzd.cn/guoqingjun/xray-core/common/buf"
+	"github.com/xtls/xray-core/common/buf"
 )
 
 type ReceivingWindow struct {

@@ -7,7 +7,7 @@ import (
 	"io"
 	"sync"
 
-	"zgjzd.cn/guoqingjun/xray-core/common"
+	"github.com/xtls/xray-core/common"
 )
 
 const (

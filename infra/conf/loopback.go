@@ -2,7 +2,7 @@ package conf
 
 import (
 	"github.com/golang/protobuf/proto"
-	"zgjzd.cn/guoqingjun/xray-core/proxy/loopback"
+	"github.com/xtls/xray-core/proxy/loopback"
 )
 
 type LoopbackConfig struct {

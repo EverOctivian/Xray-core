@@ -9,11 +9,11 @@ import (
 	"sync"
 	"time"
 
-	"zgjzd.cn/guoqingjun/xray-core/common/net"
-	"zgjzd.cn/guoqingjun/xray-core/common/ocsp"
-	"zgjzd.cn/guoqingjun/xray-core/common/platform/filesystem"
-	"zgjzd.cn/guoqingjun/xray-core/common/protocol/tls/cert"
-	"zgjzd.cn/guoqingjun/xray-core/transport/internet"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/ocsp"
+	"github.com/xtls/xray-core/common/platform/filesystem"
+	"github.com/xtls/xray-core/common/protocol/tls/cert"
+	"github.com/xtls/xray-core/transport/internet"
 )
 
 var globalSessionCache = tls.NewLRUClientSessionCache(128)

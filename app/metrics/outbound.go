@@ -4,11 +4,11 @@ import (
 	"context"
 	"sync"
 
-	"zgjzd.cn/guoqingjun/xray-core/common"
-	"zgjzd.cn/guoqingjun/xray-core/common/net"
-	"zgjzd.cn/guoqingjun/xray-core/common/net/cnc"
-	"zgjzd.cn/guoqingjun/xray-core/common/signal/done"
-	"zgjzd.cn/guoqingjun/xray-core/transport"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/net/cnc"
+	"github.com/xtls/xray-core/common/signal/done"
+	"github.com/xtls/xray-core/transport"
 )
 
 // OutboundListener is a net.Listener for listening metrics http connections.

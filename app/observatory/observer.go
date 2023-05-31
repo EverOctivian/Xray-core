@@ -10,15 +10,15 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"zgjzd.cn/guoqingjun/xray-core/common"
-	v2net "zgjzd.cn/guoqingjun/xray-core/common/net"
-	"zgjzd.cn/guoqingjun/xray-core/common/session"
-	"zgjzd.cn/guoqingjun/xray-core/common/signal/done"
-	"zgjzd.cn/guoqingjun/xray-core/common/task"
-	"zgjzd.cn/guoqingjun/xray-core/core"
-	"zgjzd.cn/guoqingjun/xray-core/features/extension"
-	"zgjzd.cn/guoqingjun/xray-core/features/outbound"
-	"zgjzd.cn/guoqingjun/xray-core/transport/internet/tagged"
+	"github.com/xtls/xray-core/common"
+	v2net "github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/session"
+	"github.com/xtls/xray-core/common/signal/done"
+	"github.com/xtls/xray-core/common/task"
+	"github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/features/extension"
+	"github.com/xtls/xray-core/features/outbound"
+	"github.com/xtls/xray-core/transport/internet/tagged"
 )
 
 type Observer struct {

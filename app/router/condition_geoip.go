@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"sort"
 
-	"zgjzd.cn/guoqingjun/xray-core/common/net"
+	"github.com/xtls/xray-core/common/net"
 )
 
 type ipv6 struct {

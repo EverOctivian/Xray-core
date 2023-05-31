@@ -6,8 +6,8 @@ import (
 	"math"
 	"time"
 
-	"zgjzd.cn/guoqingjun/xray-core/common"
-	"zgjzd.cn/guoqingjun/xray-core/common/buf"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/buf"
 )
 
 type SniffHeader struct{}

@@ -6,11 +6,11 @@ import (
 	"os/exec"
 	"strings"
 
-	"zgjzd.cn/guoqingjun/xray-core/common/buf"
-	"zgjzd.cn/guoqingjun/xray-core/common/platform"
+	"github.com/xtls/xray-core/common/buf"
+	"github.com/xtls/xray-core/common/platform"
 )
 
-//go:generate go run zgjzd.cn/guoqingjun/xray-core/common/errors/errorgen
+//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
 
 func Run(args []string, input io.Reader) (buf.MultiBuffer, error) {
 	xctl := platform.GetToolLocation("xctl")

@@ -1,6 +1,6 @@
 package external
 
-import "zgjzd.cn/guoqingjun/xray-core/common/errors"
+import "github.com/xtls/xray-core/common/errors"
 
 type errPathObjHolder struct{}
 

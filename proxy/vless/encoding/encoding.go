@@ -1,6 +1,6 @@
 package encoding
 
-//go:generate go run zgjzd.cn/guoqingjun/xray-core/common/errors/errorgen
+//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
 
 import (
 	"bytes"
@@ -13,17 +13,17 @@ import (
 	"syscall"
 	"time"
 
-	"zgjzd.cn/guoqingjun/xray-core/common/buf"
-	"zgjzd.cn/guoqingjun/xray-core/common/errors"
-	"zgjzd.cn/guoqingjun/xray-core/common/net"
-	"zgjzd.cn/guoqingjun/xray-core/common/protocol"
-	"zgjzd.cn/guoqingjun/xray-core/common/session"
-	"zgjzd.cn/guoqingjun/xray-core/common/signal"
-	"zgjzd.cn/guoqingjun/xray-core/features/stats"
-	"zgjzd.cn/guoqingjun/xray-core/proxy/vless"
-	"zgjzd.cn/guoqingjun/xray-core/transport/internet/reality"
-	"zgjzd.cn/guoqingjun/xray-core/transport/internet/stat"
-	"zgjzd.cn/guoqingjun/xray-core/transport/internet/tls"
+	"github.com/xtls/xray-core/common/buf"
+	"github.com/xtls/xray-core/common/errors"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/protocol"
+	"github.com/xtls/xray-core/common/session"
+	"github.com/xtls/xray-core/common/signal"
+	"github.com/xtls/xray-core/features/stats"
+	"github.com/xtls/xray-core/proxy/vless"
+	"github.com/xtls/xray-core/transport/internet/reality"
+	"github.com/xtls/xray-core/transport/internet/stat"
+	"github.com/xtls/xray-core/transport/internet/tls"
 )
 
 const (

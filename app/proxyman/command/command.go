@@ -3,12 +3,12 @@ package command
 import (
 	"context"
 
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/features/inbound"
+	"github.com/xtls/xray-core/features/outbound"
+	"github.com/xtls/xray-core/proxy"
 	grpc "google.golang.org/grpc"
-	"zgjzd.cn/guoqingjun/xray-core/common"
-	"zgjzd.cn/guoqingjun/xray-core/core"
-	"zgjzd.cn/guoqingjun/xray-core/features/inbound"
-	"zgjzd.cn/guoqingjun/xray-core/features/outbound"
-	"zgjzd.cn/guoqingjun/xray-core/proxy"
 )
 
 // InboundOperation is the interface for operations that applies to inbound handlers.

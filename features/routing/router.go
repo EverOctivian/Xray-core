@@ -1,8 +1,8 @@
 package routing
 
 import (
-	"zgjzd.cn/guoqingjun/xray-core/common"
-	"zgjzd.cn/guoqingjun/xray-core/features"
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/features"
 )
 
 // Router is a feature to choose an outbound tag for the given request.

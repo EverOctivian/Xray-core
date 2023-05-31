@@ -1,17 +1,17 @@
 package commander
 
-//go:generate go run zgjzd.cn/guoqingjun/xray-core/common/errors/errorgen
+//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
 
 import (
 	"context"
 	"net"
 	"sync"
 
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/signal/done"
+	core "github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/features/outbound"
 	"google.golang.org/grpc"
-	"zgjzd.cn/guoqingjun/xray-core/common"
-	"zgjzd.cn/guoqingjun/xray-core/common/signal/done"
-	core "zgjzd.cn/guoqingjun/xray-core/core"
-	"zgjzd.cn/guoqingjun/xray-core/features/outbound"
 )
 
 // Commander is a Xray feature that provides gRPC methods to external clients.

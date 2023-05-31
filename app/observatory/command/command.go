@@ -6,11 +6,11 @@ package command
 import (
 	"context"
 
+	"github.com/xtls/xray-core/app/observatory"
+	"github.com/xtls/xray-core/common"
+	core "github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/features/extension"
 	"google.golang.org/grpc"
-	"zgjzd.cn/guoqingjun/xray-core/app/observatory"
-	"zgjzd.cn/guoqingjun/xray-core/common"
-	core "zgjzd.cn/guoqingjun/xray-core/core"
-	"zgjzd.cn/guoqingjun/xray-core/features/extension"
 )
 
 type service struct {

@@ -4,8 +4,8 @@
 package tcp
 
 import (
-	"zgjzd.cn/guoqingjun/xray-core/common/net"
-	"zgjzd.cn/guoqingjun/xray-core/transport/internet/stat"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/transport/internet/stat"
 )
 
 func GetOriginalDestination(conn stat.Connection) (net.Destination, error) {

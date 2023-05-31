@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 
 	"github.com/golang/protobuf/proto"
-	"zgjzd.cn/guoqingjun/xray-core/common/serial"
-	"zgjzd.cn/guoqingjun/xray-core/proxy/blackhole"
+	"github.com/xtls/xray-core/common/serial"
+	"github.com/xtls/xray-core/proxy/blackhole"
 )
 
 type NoneResponse struct{}

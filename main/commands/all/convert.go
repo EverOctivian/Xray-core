@@ -10,12 +10,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/xtls/xray-core/common"
+	"github.com/xtls/xray-core/common/buf"
+	"github.com/xtls/xray-core/infra/conf"
+	"github.com/xtls/xray-core/infra/conf/serial"
+	"github.com/xtls/xray-core/main/commands/base"
 	"google.golang.org/protobuf/proto"
-	"zgjzd.cn/guoqingjun/xray-core/common"
-	"zgjzd.cn/guoqingjun/xray-core/common/buf"
-	"zgjzd.cn/guoqingjun/xray-core/infra/conf"
-	"zgjzd.cn/guoqingjun/xray-core/infra/conf/serial"
-	"zgjzd.cn/guoqingjun/xray-core/main/commands/base"
 )
 
 var cmdConvert = &base.Command{

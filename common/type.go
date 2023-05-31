@@ -14,7 +14,7 @@ var typeCreatorRegistry = make(map[reflect.Type]ConfigCreator)
 func RegisterConfig(config interface{}, configCreator ConfigCreator) error {
 	configType := reflect.TypeOf(config)
 	if _, found := typeCreatorRegistry[configType]; found {
-		return newError(configType.Name() + " is already registered").AtError()
+		return newError(configType.Name() + " is already registered.").AtError()
 	}
 	typeCreatorRegistry[configType] = configCreator
 	return nil

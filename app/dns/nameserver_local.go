@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"zgjzd.cn/guoqingjun/xray-core/common/log"
-	"zgjzd.cn/guoqingjun/xray-core/common/net"
-	"zgjzd.cn/guoqingjun/xray-core/features/dns"
-	"zgjzd.cn/guoqingjun/xray-core/features/dns/localdns"
+	"github.com/xtls/xray-core/common/log"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/features/dns"
+	"github.com/xtls/xray-core/features/dns/localdns"
 )
 
 // LocalNameServer is an wrapper over local DNS feature.
@@ -28,7 +28,7 @@ func (s *LocalNameServer) QueryIP(_ context.Context, domain string, _ net.IP, op
 	}
 
 	if len(ips) > 0 {
-		newError("Localhost got answer: ", domain, " -> ", ips).AtInfo().WriteToLog()
+		newError("LocalHost has got answer: ", domain, " -> ", ips).AtInfo().WriteToLog()
 		log.Record(&log.DNSLog{Server: s.Name(), Domain: domain, Result: ips, Status: log.DNSQueried, Elapsed: time.Since(start), Error: err})
 	}
 

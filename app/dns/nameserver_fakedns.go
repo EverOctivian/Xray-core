@@ -3,9 +3,9 @@ package dns
 import (
 	"context"
 
-	"zgjzd.cn/guoqingjun/xray-core/common/net"
-	"zgjzd.cn/guoqingjun/xray-core/core"
-	"zgjzd.cn/guoqingjun/xray-core/features/dns"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/core"
+	"github.com/xtls/xray-core/features/dns"
 )
 
 type FakeDNSServer struct {
@@ -25,7 +25,7 @@ func (f *FakeDNSServer) QueryIP(ctx context.Context, domain string, _ net.IP, op
 		if err := core.RequireFeatures(ctx, func(fd dns.FakeDNSEngine) {
 			f.fakeDNSEngine = fd
 		}); err != nil {
-			return nil, newError("Unable to locate a fake DNS Engine").Base(err).AtError()
+			return nil, newError("Unable to locate a fake DNS Engine.").Base(err).AtError()
 		}
 	}
 	var ips []net.Address
@@ -37,7 +37,7 @@ func (f *FakeDNSServer) QueryIP(ctx context.Context, domain string, _ net.IP, op
 
 	netIP, err := toNetIP(ips)
 	if err != nil {
-		return nil, newError("Unable to convert IP to net ip").Base(err).AtError()
+		return nil, newError("Unable to convert IP to Net IP.").Base(err).AtError()
 	}
 
 	newError(f.Name(), " got answer: ", domain, " -> ", ips).AtInfo().WriteToLog()

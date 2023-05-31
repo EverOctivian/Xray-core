@@ -5,8 +5,8 @@ import (
 	"syscall"
 	"unsafe"
 
+	"github.com/xtls/xray-core/common/net"
 	"golang.org/x/sys/unix"
-	"zgjzd.cn/guoqingjun/xray-core/common/net"
 )
 
 const (

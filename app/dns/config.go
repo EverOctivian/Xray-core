@@ -1,9 +1,9 @@
 package dns
 
 import (
-	"zgjzd.cn/guoqingjun/xray-core/common/net"
-	"zgjzd.cn/guoqingjun/xray-core/common/strmatcher"
-	"zgjzd.cn/guoqingjun/xray-core/common/uuid"
+	"github.com/xtls/xray-core/common/net"
+	"github.com/xtls/xray-core/common/strmatcher"
+	"github.com/xtls/xray-core/common/uuid"
 )
 
 var typeMap = map[DomainMatchingType]strmatcher.Type{
@@ -40,7 +40,7 @@ func toStrMatcher(t DomainMatchingType, domain string) (strmatcher.Matcher, erro
 	}
 	matcher, err := strMType.New(domain)
 	if err != nil {
-		return nil, newError("failed to create str matcher").Base(err)
+		return nil, newError("failed to create str matcher.").Base(err)
 	}
 	return matcher, nil
 }

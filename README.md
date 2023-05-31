@@ -1,12 +1,12 @@
 # Project X
 
-[Project X](https://zgjzd.cn/guoqingjun) originates from XTLS protocol, providing a set of network tools such as [Xray-core](https://zgjzd.cn/guoqingjun/Xray-core) and [REALITY](https://zgjzd.cn/guoqingjun/REALITY).
+[Project X](https://github.com/XTLS) originates from XTLS protocol, providing a set of network tools such as [Xray-core](https://github.com/XTLS/Xray-core) and [REALITY](https://github.com/XTLS/REALITY).
 
-[README](https://zgjzd.cn/guoqingjun/Xray-core#readme) is open, so feel free to submit your project [here](https://zgjzd.cn/guoqingjun/Xray-core/pulls).
+[README](https://github.com/XTLS/Xray-core#readme) is open, so feel free to submit your project [here](https://github.com/XTLS/Xray-core/pulls).
 
 ## License
 
-[Mozilla Public License Version 2.0](https://zgjzd.cn/guoqingjun/Xray-core/blob/main/LICENSE)
+[Mozilla Public License Version 2.0](https://github.com/XTLS/Xray-core/blob/main/LICENSE)
 
 ## Documentation
 
@@ -21,7 +21,7 @@
 ## Installation
 
 - Linux Script
-  - [XTLS/Xray-install](https://zgjzd.cn/guoqingjun/Xray-install)
+  - [XTLS/Xray-install](https://github.com/XTLS/Xray-install)
 - Docker
   - [teddysun/xray](https://hub.docker.com/r/teddysun/xray)
 - Web Panel
@@ -43,11 +43,11 @@
 ## Usage
 
 - Example
-  - [VLESS-XTLS-uTLS-REALITY](https://zgjzd.cn/guoqingjun/REALITY#readme)
-  - [VLESS-TCP-XTLS-Vision](https://zgjzd.cn/guoqingjun/Xray-examples/tree/main/VLESS-TCP-XTLS-Vision)
-  - [All-in-One-fallbacks-Nginx](https://zgjzd.cn/guoqingjun/Xray-examples/tree/main/All-in-One-fallbacks-Nginx)
+  - [VLESS-XTLS-uTLS-REALITY](https://github.com/XTLS/REALITY#readme)
+  - [VLESS-TCP-XTLS-Vision](https://github.com/XTLS/Xray-examples/tree/main/VLESS-TCP-XTLS-Vision)
+  - [All-in-One-fallbacks-Nginx](https://github.com/XTLS/Xray-examples/tree/main/All-in-One-fallbacks-Nginx)
 - Xray-examples
-  - [XTLS/Xray-examples](https://zgjzd.cn/guoqingjun/Xray-examples)
+  - [XTLS/Xray-examples](https://github.com/XTLS/Xray-examples)
   - [chika0801/Xray-examples](https://github.com/chika0801/Xray-examples)
   - [lxhao61/integrated-examples](https://github.com/lxhao61/integrated-examples)
 - Tutorial
@@ -68,7 +68,7 @@
 - Android
   - [v2rayNG](https://github.com/2dust/v2rayNG)
   - [HiddifyNG](https://github.com/hiddify/HiddifyNG)
-  - [X-flutter](https://zgjzd.cn/guoqingjun/X-flutter)
+  - [X-flutter](https://github.com/XTLS/X-flutter)
 - iOS & macOS arm64
   - [Mango](https://github.com/arror/Mango)
   - [FoXray](https://apps.apple.com/app/foxray/id6448898396)
@@ -102,7 +102,7 @@
 
 ## Contributing
 
-[Code of Conduct](https://zgjzd.cn/guoqingjun/Xray-core/blob/main/CODE_OF_CONDUCT.md)
+[Code of Conduct](https://github.com/XTLS/Xray-core/blob/main/CODE_OF_CONDUCT.md)
 
 ## Credits
 

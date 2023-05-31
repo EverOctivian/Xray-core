@@ -4,8 +4,8 @@ import (
 	"strings"
 	"sync"
 
-	"zgjzd.cn/guoqingjun/xray-core/common/protocol"
-	"zgjzd.cn/guoqingjun/xray-core/common/uuid"
+	"github.com/xtls/xray-core/common/protocol"
+	"github.com/xtls/xray-core/common/uuid"
 )
 
 // Validator stores valid VLESS users.
