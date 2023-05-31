@@ -1,14 +1,14 @@
 package command
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run zgjzd.cn/guoqingjun/xray-core/common/errors/errorgen
 
 import (
 	"context"
 
-	"github.com/xtls/xray-core/app/log"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/core"
 	grpc "google.golang.org/grpc"
+	"zgjzd.cn/guoqingjun/xray-core/app/log"
+	"zgjzd.cn/guoqingjun/xray-core/common"
+	"zgjzd.cn/guoqingjun/xray-core/core"
 )
 
 type LoggerServer struct {

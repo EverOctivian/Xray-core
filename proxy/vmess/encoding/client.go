@@ -13,17 +13,17 @@ import (
 	"hash/fnv"
 	"io"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/bitmask"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/crypto"
-	"github.com/xtls/xray-core/common/dice"
-	"github.com/xtls/xray-core/common/drain"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/serial"
-	"github.com/xtls/xray-core/proxy/vmess"
-	vmessaead "github.com/xtls/xray-core/proxy/vmess/aead"
 	"golang.org/x/crypto/chacha20poly1305"
+	"zgjzd.cn/guoqingjun/xray-core/common"
+	"zgjzd.cn/guoqingjun/xray-core/common/bitmask"
+	"zgjzd.cn/guoqingjun/xray-core/common/buf"
+	"zgjzd.cn/guoqingjun/xray-core/common/crypto"
+	"zgjzd.cn/guoqingjun/xray-core/common/dice"
+	"zgjzd.cn/guoqingjun/xray-core/common/drain"
+	"zgjzd.cn/guoqingjun/xray-core/common/protocol"
+	"zgjzd.cn/guoqingjun/xray-core/common/serial"
+	"zgjzd.cn/guoqingjun/xray-core/proxy/vmess"
+	vmessaead "zgjzd.cn/guoqingjun/xray-core/proxy/vmess/aead"
 )
 
 func hashTimestamp(h hash.Hash, t protocol.Timestamp) []byte {

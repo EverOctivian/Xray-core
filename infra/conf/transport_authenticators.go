@@ -4,14 +4,14 @@ import (
 	"sort"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/xtls/xray-core/transport/internet/headers/dns"
-	"github.com/xtls/xray-core/transport/internet/headers/http"
-	"github.com/xtls/xray-core/transport/internet/headers/noop"
-	"github.com/xtls/xray-core/transport/internet/headers/srtp"
-	"github.com/xtls/xray-core/transport/internet/headers/tls"
-	"github.com/xtls/xray-core/transport/internet/headers/utp"
-	"github.com/xtls/xray-core/transport/internet/headers/wechat"
-	"github.com/xtls/xray-core/transport/internet/headers/wireguard"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet/headers/dns"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet/headers/http"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet/headers/noop"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet/headers/srtp"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet/headers/tls"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet/headers/utp"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet/headers/wechat"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet/headers/wireguard"
 )
 
 type NoOpAuthenticator struct{}

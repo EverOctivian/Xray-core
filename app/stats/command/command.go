@@ -1,18 +1,18 @@
 package command
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run zgjzd.cn/guoqingjun/xray-core/common/errors/errorgen
 
 import (
 	"context"
 	"runtime"
 	"time"
 
-	"github.com/xtls/xray-core/app/stats"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/strmatcher"
-	"github.com/xtls/xray-core/core"
-	feature_stats "github.com/xtls/xray-core/features/stats"
 	grpc "google.golang.org/grpc"
+	"zgjzd.cn/guoqingjun/xray-core/app/stats"
+	"zgjzd.cn/guoqingjun/xray-core/common"
+	"zgjzd.cn/guoqingjun/xray-core/common/strmatcher"
+	"zgjzd.cn/guoqingjun/xray-core/core"
+	feature_stats "zgjzd.cn/guoqingjun/xray-core/features/stats"
 )
 
 // statsServer is an implementation of StatsService.

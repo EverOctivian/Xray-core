@@ -5,8 +5,8 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"github.com/xtls/xray-core/main/commands/base"
 	"golang.org/x/crypto/curve25519"
+	"zgjzd.cn/guoqingjun/xray-core/main/commands/base"
 )
 
 var cmdX25519 = &base.Command{

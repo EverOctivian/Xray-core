@@ -4,10 +4,10 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
+	"zgjzd.cn/guoqingjun/xray-core/common"
+	"zgjzd.cn/guoqingjun/xray-core/common/buf"
+	"zgjzd.cn/guoqingjun/xray-core/common/net"
+	"zgjzd.cn/guoqingjun/xray-core/common/protocol"
 )
 
 const (

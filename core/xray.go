@@ -6,17 +6,17 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/serial"
-	"github.com/xtls/xray-core/features"
-	"github.com/xtls/xray-core/features/dns"
-	"github.com/xtls/xray-core/features/dns/localdns"
-	"github.com/xtls/xray-core/features/inbound"
-	"github.com/xtls/xray-core/features/outbound"
-	"github.com/xtls/xray-core/features/policy"
-	"github.com/xtls/xray-core/features/routing"
-	"github.com/xtls/xray-core/features/stats"
-	"github.com/xtls/xray-core/transport/internet"
+	"zgjzd.cn/guoqingjun/xray-core/common"
+	"zgjzd.cn/guoqingjun/xray-core/common/serial"
+	"zgjzd.cn/guoqingjun/xray-core/features"
+	"zgjzd.cn/guoqingjun/xray-core/features/dns"
+	"zgjzd.cn/guoqingjun/xray-core/features/dns/localdns"
+	"zgjzd.cn/guoqingjun/xray-core/features/inbound"
+	"zgjzd.cn/guoqingjun/xray-core/features/outbound"
+	"zgjzd.cn/guoqingjun/xray-core/features/policy"
+	"zgjzd.cn/guoqingjun/xray-core/features/routing"
+	"zgjzd.cn/guoqingjun/xray-core/features/stats"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet"
 )
 
 // Server is an instance of Xray. At any time, there must be at most one Server instance running.

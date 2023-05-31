@@ -1,17 +1,17 @@
 package inbound
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run zgjzd.cn/guoqingjun/xray-core/common/errors/errorgen
 
 import (
 	"context"
 	"sync"
 
-	"github.com/xtls/xray-core/app/proxyman"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/serial"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/inbound"
+	"zgjzd.cn/guoqingjun/xray-core/app/proxyman"
+	"zgjzd.cn/guoqingjun/xray-core/common"
+	"zgjzd.cn/guoqingjun/xray-core/common/serial"
+	"zgjzd.cn/guoqingjun/xray-core/common/session"
+	"zgjzd.cn/guoqingjun/xray-core/core"
+	"zgjzd.cn/guoqingjun/xray-core/features/inbound"
 )
 
 // Manager is to manage all inbound handlers.

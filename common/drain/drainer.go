@@ -4,7 +4,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/xtls/xray-core/common/dice"
+	"zgjzd.cn/guoqingjun/xray-core/common/dice"
 )
 
 type BehaviorSeedLimitedDrainer struct {

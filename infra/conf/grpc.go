@@ -2,7 +2,7 @@ package conf
 
 import (
 	"github.com/golang/protobuf/proto"
-	"github.com/xtls/xray-core/transport/internet/grpc"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet/grpc"
 )
 
 type GRPCConfig struct {

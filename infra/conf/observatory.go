@@ -2,8 +2,8 @@ package conf
 
 import (
 	"github.com/golang/protobuf/proto"
-	"github.com/xtls/xray-core/app/observatory"
-	"github.com/xtls/xray-core/infra/conf/cfgcommon/duration"
+	"zgjzd.cn/guoqingjun/xray-core/app/observatory"
+	"zgjzd.cn/guoqingjun/xray-core/infra/conf/cfgcommon/duration"
 )
 
 type ObservatoryConfig struct {

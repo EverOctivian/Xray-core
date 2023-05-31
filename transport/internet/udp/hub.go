@@ -3,10 +3,10 @@ package udp
 import (
 	"context"
 
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol/udp"
-	"github.com/xtls/xray-core/transport/internet"
+	"zgjzd.cn/guoqingjun/xray-core/common/buf"
+	"zgjzd.cn/guoqingjun/xray-core/common/net"
+	"zgjzd.cn/guoqingjun/xray-core/common/protocol/udp"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet"
 )
 
 type HubOption func(h *Hub)

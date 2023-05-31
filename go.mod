@@ -1,4 +1,4 @@
-module github.com/xtls/xray-core
+module zgjzd.cn/guoqingjun/xray-core
 
 go 1.20
 
@@ -19,7 +19,7 @@ require (
 	github.com/seiflotfy/cuckoofilter v0.0.0-20220411075957-e3b120b3f5fb
 	github.com/stretchr/testify v1.8.3
 	github.com/v2fly/ss-bloomring v0.0.0-20210312155135-28617310f63e
-	github.com/xtls/reality v0.0.0-20230331223127-176a94313eda
+	zgjzd.cn/guoqingjun/reality v0.0.0-20230331223127-176a94313eda
 	go.starlark.net v0.0.0-20230302034142-4b1e35fe2254
 	golang.org/x/crypto v0.9.0
 	golang.org/x/net v0.10.0

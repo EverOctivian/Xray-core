@@ -3,9 +3,9 @@ package conf_test
 import (
 	"testing"
 
-	"github.com/xtls/xray-core/common/net"
-	. "github.com/xtls/xray-core/infra/conf"
-	"github.com/xtls/xray-core/proxy/dns"
+	"zgjzd.cn/guoqingjun/xray-core/common/net"
+	. "zgjzd.cn/guoqingjun/xray-core/infra/conf"
+	"zgjzd.cn/guoqingjun/xray-core/proxy/dns"
 )
 
 func TestDnsProxyConfig(t *testing.T) {

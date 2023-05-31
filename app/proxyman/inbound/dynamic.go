@@ -5,14 +5,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xtls/xray-core/app/proxyman"
-	"github.com/xtls/xray-core/common/dice"
-	"github.com/xtls/xray-core/common/mux"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/task"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/proxy"
-	"github.com/xtls/xray-core/transport/internet"
+	"zgjzd.cn/guoqingjun/xray-core/app/proxyman"
+	"zgjzd.cn/guoqingjun/xray-core/common/dice"
+	"zgjzd.cn/guoqingjun/xray-core/common/mux"
+	"zgjzd.cn/guoqingjun/xray-core/common/net"
+	"zgjzd.cn/guoqingjun/xray-core/common/task"
+	"zgjzd.cn/guoqingjun/xray-core/core"
+	"zgjzd.cn/guoqingjun/xray-core/proxy"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet"
 )
 
 type DynamicInboundHandler struct {

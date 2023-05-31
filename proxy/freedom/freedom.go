@@ -1,6 +1,6 @@
 package freedom
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run zgjzd.cn/guoqingjun/xray-core/common/errors/errorgen
 
 import (
 	"context"
@@ -9,21 +9,21 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/dice"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/retry"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/signal"
-	"github.com/xtls/xray-core/common/task"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/dns"
-	"github.com/xtls/xray-core/features/policy"
-	"github.com/xtls/xray-core/features/stats"
-	"github.com/xtls/xray-core/transport"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/stat"
+	"zgjzd.cn/guoqingjun/xray-core/common"
+	"zgjzd.cn/guoqingjun/xray-core/common/buf"
+	"zgjzd.cn/guoqingjun/xray-core/common/dice"
+	"zgjzd.cn/guoqingjun/xray-core/common/net"
+	"zgjzd.cn/guoqingjun/xray-core/common/retry"
+	"zgjzd.cn/guoqingjun/xray-core/common/session"
+	"zgjzd.cn/guoqingjun/xray-core/common/signal"
+	"zgjzd.cn/guoqingjun/xray-core/common/task"
+	"zgjzd.cn/guoqingjun/xray-core/core"
+	"zgjzd.cn/guoqingjun/xray-core/features/dns"
+	"zgjzd.cn/guoqingjun/xray-core/features/policy"
+	"zgjzd.cn/guoqingjun/xray-core/features/stats"
+	"zgjzd.cn/guoqingjun/xray-core/transport"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet/stat"
 )
 
 func init() {
@@ -380,7 +380,7 @@ func (w *FragmentWriter) Write(buf []byte) (int, error) {
 	}
 }
 
-// stolen from github.com/xtls/xray-core/transport/internet/reality
+// stolen from zgjzd.cn/guoqingjun/xray-core/transport/internet/reality
 func randBetween(left int64, right int64) int64 {
 	if left == right {
 		return left

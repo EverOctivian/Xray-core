@@ -1,7 +1,7 @@
 package conf
 
 import (
-	"github.com/xtls/xray-core/app/metrics"
+	"zgjzd.cn/guoqingjun/xray-core/app/metrics"
 )
 
 type MetricsConfig struct {

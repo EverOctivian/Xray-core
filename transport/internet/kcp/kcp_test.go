@@ -8,13 +8,13 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/transport/internet"
-	. "github.com/xtls/xray-core/transport/internet/kcp"
-	"github.com/xtls/xray-core/transport/internet/stat"
 	"golang.org/x/sync/errgroup"
+	"zgjzd.cn/guoqingjun/xray-core/common"
+	"zgjzd.cn/guoqingjun/xray-core/common/errors"
+	"zgjzd.cn/guoqingjun/xray-core/common/net"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet"
+	. "zgjzd.cn/guoqingjun/xray-core/transport/internet/kcp"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet/stat"
 )
 
 func TestDialAndListen(t *testing.T) {

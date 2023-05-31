@@ -7,15 +7,15 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol/tls/cert"
-	"github.com/xtls/xray-core/testing/servers/tcp"
-	"github.com/xtls/xray-core/transport/internet"
-	. "github.com/xtls/xray-core/transport/internet/http"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/internet/tls"
+	"zgjzd.cn/guoqingjun/xray-core/common"
+	"zgjzd.cn/guoqingjun/xray-core/common/buf"
+	"zgjzd.cn/guoqingjun/xray-core/common/net"
+	"zgjzd.cn/guoqingjun/xray-core/common/protocol/tls/cert"
+	"zgjzd.cn/guoqingjun/xray-core/testing/servers/tcp"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet"
+	. "zgjzd.cn/guoqingjun/xray-core/transport/internet/http"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet/stat"
+	"zgjzd.cn/guoqingjun/xray-core/transport/internet/tls"
 )
 
 func TestHTTPConnection(t *testing.T) {
